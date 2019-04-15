@@ -15,13 +15,13 @@ function ParseWebValue {
 }
 $products = @{
     'Excel' = 'xl'
-    #'Word'       = 'wd'
-    #'Visio'      = 'vis'
-    #'Outlook'    = 'ol'
-    #'Publisher'  = 'pb'
-    #'PowerPoint' = 'pp'
-    #'Access'     = 'ac'
-    #'Project'    = 'pj'
+    'Word'       = 'wd'
+    'Visio'      = 'vis'
+    'Outlook'    = 'ol'
+    'Publisher'  = 'pb'
+    'PowerPoint' = 'pp'
+    'Access'     = 'ac'
+    'Project'    = 'pj'
 }
 $exceptions = 0
 $docsToSkip = @('word.xlpieslicelocation', 'outlook.olxdefaultfolde', 'powerpoint.xlpieslicelocation', 'word.xlpieslicelocation')
