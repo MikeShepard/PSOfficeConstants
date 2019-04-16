@@ -106,7 +106,7 @@ $xl = [Ordered]@{
     xlLow                                     =	-4134		# Low
     xlLTR                                     =	-5003		# LTR
     xlMacrosheetCell                          =	7		# MacrosheetCell
-    # Manual
+
     xlMaximum                                 =	2		# Maximum
     xlMinimum                                 =	4		# Minimum
     xlMinusValues                             =	3		# Minus Values

@@ -56,7 +56,7 @@ foreach ($product in $products.Keys) {
         $docName = $link.Attributes['href'].Value
         if ($docName -in $docsToSkip) { break }
         $innerURL = 'https://docs.microsoft.com/en-us/office/vba/api/{0}' -f $docname
-        #write-verbose ('Looking for values in {0}' -f $docName)
+
         [void]$productStringBuilder.AppendLine()
         [void]$productStringBuilder.AppendLine("#values from $docname")
         [void]$productStringBuilder.AppendLine("#****************************")
@@ -90,7 +90,6 @@ foreach ($product in $products.Keys) {
                     } else {
                         write-host "Skipping $docName - $name because it isn't an INT ($($row.InnerText))"
                         $exceptions += 1
-                        [void]$productStringBuilder.Remove($productSTringBuilder.Length - $Name.length - 1, $name.Length)
                     }
                     break
                 }
